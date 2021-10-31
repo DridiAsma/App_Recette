@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".UpdateActivity">
+
+<ImageView
+    android:id="@+id/UpdateBigImage"
+    android:layout_width="412dp"
+    android:layout_height="150dp"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="0dp"
+    android:contentDescription="@string/photo"
+    android:scaleType="fitXY"/>
+
+<EditText
+    android:id="@+id/ViewTitleUpdate"
+    android:layout_width="412dp"
+    android:layout_height="55dp"
+    android:text="@string/title"
+    android:gravity="center"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="193dp"
+    android:layout_below="@+id/UpdateBigImage"
+    android:textStyle="bold|italic"
+    android:textColor="@color/colorPrimary"
+    android:textSize="30sp"
+    android:inputType="text"
+    android:background="@mipmap/cadre"/>
+
+<TextView
+    android:id="@+id/ViewInUpdate"
+    android:layout_width="410dp"
+    android:layout_height="50dp"
+    android:layout_below="@+id/ViewTitleUpdate"
+    android:layout_marginTop="1dp"
+    android:gravity="center_vertical"
+    android:textColor="@color/colorPrimary"
+    android:textStyle="italic|bold"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="270dp"
+    android:textSize="20sp"
+    android:labelFor="@+id/ViewIngredientUpdate"
+    android:text="@string/ingredient"
+    android:background="@mipmap/fond"/>
+
+<EditText
+    android:id="@+id/ViewIngredientUpdate"
+    android:layout_width="410dp"
+    android:layout_height="140dp"
+    android:layout_below="@+id/ViewInUpdate"
+    android:layout_marginTop="0dp"
+    android:textSize="15sp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="270dp"
+    android:hint="@string/ingredient"
+    android:background="@mipmap/cadre"
+    android:inputType="textMultiLine"/>
+
+<TextView
+    android:id="@+id/ViewPrepUpdate"
+    android:layout_width="410dp"
+    android:layout_height="50dp"
+    android:layout_below="@+id/ViewIngredientUpdate"
+    android:layout_marginTop="-2dp"
+    android:background="@mipmap/fond"
+    android:gravity="center_vertical"
+    android:textColor="@color/colorPrimary"
+    android:textSize="20sp"
+    android:textStyle="italic|bold"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="430dp"
+    android:labelFor="@+id/ViewPreparationUpdate"
+    android:text="@string/how"/>
+
+    <EditText
+        android:id="@+id/ViewPreparationUpdate"
+        android:layout_width="410dp"
+        android:layout_height="285dp"
+        android:layout_below="@+id/ViewPrepUpdate"
+        android:layout_marginTop="1dp"
+        android:background="@mipmap/cadre"
+        android:hint="@string/how"
+        android:inputType="textMultiLine"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="430dp" />
+</RelativeLayout>

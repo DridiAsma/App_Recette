@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/BigImage"
+        android:layout_width="412dp"
+        android:layout_height="150dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:contentDescription="@string/photo"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/ViewTitle"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:text="@string/title"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="193dp"
+        android:layout_below="@+id/BigImage"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:background="@mipmap/fond"/>
+
+    <TextView
+        android:id="@+id/ViewIn"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ViewTitle"
+        android:layout_marginTop="1dp"
+        android:background="@mipmap/cadre"
+        android:gravity="center_vertical"
+        android:text="@string/ingredient"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic
+"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/ViewIngredient"
+        android:layout_width="410dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/ViewIn"
+        android:layout_marginTop="0dp"
+        android:textSize="15sp"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:background="@mipmap/grisclair"/>
+
+    <TextView
+        android:id="@+id/ViewPrep"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ViewIngredient"
+        android:layout_marginTop="-2dp"
+        android:background="@mipmap/cadre"
+        android:gravity="center_vertical"
+        android:text="@string/how"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <TextView
+        android:id="@+id/ViewPreparation"
+        android:layout_width="410dp"
+        android:layout_height="268dp"
+        android:layout_below="@+id/ViewPrep"
+        android:layout_marginTop="1dp"
+        android:textSize="15sp"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="430dp"
+        android:background="@mipmap/grisclair"/>
+</RelativeLayout>
